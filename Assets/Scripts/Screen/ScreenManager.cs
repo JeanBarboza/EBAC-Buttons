@@ -9,7 +9,7 @@ namespace Screens
     {
         public List<ScreenBase> screenBases;
 
-        public ScreenType startScreen = ScreenType.Panel;
+        public ScreenType startScreen = ScreenType.Play;
 
         private ScreenBase _currentScreen;
 

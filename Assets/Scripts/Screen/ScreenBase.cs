@@ -9,22 +9,16 @@ namespace Screens
 {
     public enum ScreenType
     {
-        Panel,
-        Info_panel,
-        Inventory_Panel,
-        Messages,
-        Ranking,
-        Missions,
-        Settings,
-        Facebook,
-        Shop
+        Play,
+        Info,
+        Exit
     }
     public class ScreenBase : MonoBehaviour
     {
         public ScreenType screenType;
 
         public List<Transform> listOfObjects;
-        public List<Typper> listOfPhases;
+        //public List<Typper> listOfPhases;
 
         public Image uiBackground;
         public bool startHided = false;
@@ -36,6 +30,7 @@ namespace Screens
 
         private void Start()
         {
+
             if (startHided)
             {
                 HideObjects();
@@ -77,9 +72,9 @@ namespace Screens
 
         private void StartType()
         {
-            for (int i =0; i < listOfPhases.Count; i++)
+            //for (int i =0; i < listOfPhases.Count; i++)
             {
-                listOfPhases[i].StartType();
+            //    listOfPhases[i].StartType();
             }
         }
         
